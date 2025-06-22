@@ -2,9 +2,9 @@
 
 **Rakt-Setu** is a life-saving platform that instantly connects patients in urgent need of blood with matching donors nearby — especially when blood banks fall short.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e4c84d68-1dc2-4ef2-8c2e-171e9427b1a9/deploy-status)](https://rakt-setu.netlify.app)
-![Firebase](https://img.shields.io/badge/Backend-Firebase-orange?logo=firebase)
-![Status](https://img.shields.io/badge/Live-Yes-brightgreen)
+[![Netlify Status](https://img.shields.io/badge/Deployed%20on-Netlify-00C7B7?logo=netlify&logoColor=white)](https://rakt-setu.netlify.app)
+![Backend: Firebase](https://img.shields.io/badge/Backend-Firebase-orange?logo=firebase)
+![Live](https://img.shields.io/badge/Live-Yes-brightgreen)
 
 ---
 
