@@ -1,0 +1,172 @@
+
+/* Header Section */
+header {
+    padding-top: 120px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #fff;
+    color: #b71c1c;
+    position: relative;
+    z-index: 1;
+}
+
+header h1, header h2, header h3 {
+    color: red;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+/* Mission Message Box */
+.message {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-left: 5px solid #d32f2f;
+    border-radius: 8px;
+    font-size: 18px;
+    font-style: italic;
+    color: #444;
+}
+
+/* Motivational Line */
+.motivation {
+    font-size: 20px;
+    font-weight: bold;
+    color: #b71c1c;
+    margin: 15px 0;
+}
+
+/* Centered Wrapper */
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 160px); /* adjusts for header/nav */
+    padding-top: 120px;
+    padding-bottom: 40px;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* Section and Layout Divisions */
+.division {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.premium-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Info Cards */
+.info-card {
+    background-color: #fff;
+    width: 50vw;
+    min-height: 150px;
+    padding: 30px 60px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(255, 77, 77, 0.1);
+    border-left: 8px solid #ff3333;
+    animation: fadeInUp 0.5s ease forwards;
+    transition: transform 0.3s ease;
+    margin: auto;
+}
+
+.info-card h2 {
+    color: #d60000;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.info-card p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.7;
+}
+
+.info-card:hover {
+    transform: scale(1.03) translateY(-6px);
+    animation: pulseBorder 1.2s infinite;
+    box-shadow: 0 20px 40px rgba(255, 77, 77, 0.25);
+}
+
+/* Animation */
+@keyframes pulseBorder {
+  0% {
+    box-shadow: 0 0 0 rgba(255, 51, 51, 0);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(255, 51, 51, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(255, 51, 51, 0);
+  }
+}
+
+/* Call to Action Section */
+.cta-section {
+    background-color: #ff3333;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    margin: 40px auto 0 auto;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(255, 0, 0, 0.3);
+    max-width: 800px;
+}
+
+.cta-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.cta-section p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #f8f8f8;
+    line-height: 1.5;
+}
+
+.cta-button {
+    background-color: white;
+    color: #ff3333;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.cta-button:hover {
+    background-color: #ffe5e5;
+    transform: translateY(-2px);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .division {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .division section {
+        text-align: center;
+    }
+
+    .info-card {
+        width: 95vw;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,106 @@
+/* Full screen with background */
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background Image */
+.bg-image {
+  background-image: url('240_F_1097232671_Dl2s3iZgBQ1OYl4WwiXmYTUBQ8g4wGlg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.7);
+  z-index: -1;
+}
+
+/* Main Content */
+.main-container {
+  max-width: 700px;
+  margin: 80px auto 30px;
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.3);
+  text-align: center;
+  color: #fff;
+}
+
+.main-container h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.main-container h2 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+/* Dropdowns */
+.dropdown {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 2px solid #ff1e1e;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  backdrop-filter: blur(8px);
+}
+
+.dropdown option {
+  background: rgba(30, 30, 30, 0.95);
+  color: white;
+}
+
+/* Search Button */
+.search-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff1e1e;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* How it works (Updated) */
+#how-it-works {
+  margin: 30px auto 0;
+  padding: 20px;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+  text-align: left;
+}
+
+#how-it-works h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+#how-it-works ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+#how-it-works li {
+  margin-bottom: 8px;
+}

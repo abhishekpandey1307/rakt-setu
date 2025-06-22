@@ -1,0 +1,116 @@
+/* Reuses styles from common.css for consistency */
+
+section {
+  width: 95%;
+  max-width: 550px;
+  margin: 30px auto;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 16px;
+  padding: 30px 24px;
+  box-shadow: 0 10px 30px rgba(255, 77, 77, 0.2);
+  border: 1px solid rgba(255, 182, 182, 0.6);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fafafa;
+  transition: 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #ff4d4d;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(255, 77, 77, 0.2);
+  outline: none;
+}
+
+form .buttons {
+  margin-top: 10px;
+}
+
+/* Optional link below submit */
+.footer-note {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 14px;
+  color: #444;
+}
+
+.footer-note a {
+  color: #cc0000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-note a:hover {
+  text-decoration: underline;
+  color: #a30000;
+}
+
+/* Heading card for top */
+.heading-card {
+  text-align: center;
+  color: #d60000;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 30px auto 20px;
+  padding: 20px;
+  background-color: #fff0f0;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(255, 77, 77, 0.2);
+  border: 1px solid #ffd6d6;
+  max-width: 900px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Grouping location fields neatly on larger screens */
+@media screen and (min-width: 600px) {
+  .location-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .location-group .block {
+    margin-bottom: 0;
+  }
+}
+
+/* Responsive fix for mobile */
+@media screen and (max-width: 599px) {
+  .location-group {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Village and Pincode tweaks */
+#pincode[readonly] {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}

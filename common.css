@@ -1,0 +1,308 @@
+header {
+    font-size: larger;
+    font-weight: 600;
+    padding: 20px;
+    text-align: center;
+   
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: 
+    flex-wrap: wrap;
+}
+
+nav button {
+    margin: 15px 10px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+    background: 0.3s; /* Animation on hover */
+}
+
+nav button:hover {
+   
+    background: rgb(233, 54, 54);
+    color:rgb(0, 0, 0);
+    transform: scale(1.1); /* Scale effect */
+}
+.buttons {
+    height: 50px;
+    padding: 10px 15px;
+    background:rgb(225, 30, 30);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    transition:  0.3s, transform 0.2s; /* Animation on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+
+}
+ {
+    background-image: url(—Pngtree—world\ blood\ donor\ background_1742549.png);
+    /* filter: blur(3px); */
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo img {
+    height: 60px;
+    width: auto;
+}
+
+nav .navfeatures {
+    display: flex;
+    gap: 15px;
+}
+
+.buttons {
+    background: linear-gradient(135deg, #ff1e1e, #b00000);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+}
+
+.buttons::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 60%);
+    transform: rotate(0deg);
+    animation: shimmer 2.5s infinite linear;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.buttons:hover {
+    background: linear-gradient(135deg, #c70000, #7a0000);
+    box-shadow: 0 0 25px 8px rgba(255, 0, 0, 0.7);
+}
+
+.buttons:hover::before {
+    opacity: 1;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logo{
+    display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+    /* border:1px solid black; */
+    width:30%;
+    height: 100px;
+
+}
+.logo>img{
+    width: 100%;   /* scale image bigger than the box */
+    height: 100%;
+    object-fit:cover;
+ 
+}
+
+
+
+
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styles - EXACTLY from Landing Page */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo img {
+  height: 400px;
+  width: auto;
+}
+
+.navfeatures {
+  display: flex;
+  gap: 15px;
+}
+
+.buttons {
+  background: linear-gradient(135deg, #ff1e1e, #b00000);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+}
+
+.buttons::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 60%);
+  transform: rotate(0deg);
+  animation: shimmer 2.5s infinite linear;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.buttons:hover {
+  background: linear-gradient(135deg, #c70000, #7a0000);
+  box-shadow: 0 0 25px 8px rgba(255, 0, 0, 0.7);
+}
+
+.buttons:hover::before {
+  opacity: 1;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Adjust body padding so content sits below navbar */
+body {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 100px;
+
+  background:
+    linear-gradient(rgba(255, 0, 0, 0.4), rgba(255, 0, 0, 0.4)),  /* Red overlay */
+    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),  /* Faint effect */
+    url('good smiling donor.jpg') no-repeat center center;
+
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: overlay, lighten;
+  color: #333;
+}
+
+/* Footer */
+
+
+footer {
+    margin-top: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.3); /* Faint white background */
+    text-align: center;
+    font-size: 14px;
+    color: #000000; /* Black text */
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Optional: subtle separation */
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.shine-logo {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.shine-logo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 0, 0, 0) 0%,
+    rgba(255, 0, 0, 0.35) 50%,
+    rgba(255, 0, 0, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: shine 2.5s infinite;
+  pointer-events: none;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+.buttons {
+  height: 63px;
+  padding: 0 18px; /* Adds space around shorter text */
+  font-size: 14.5px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+

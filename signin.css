@@ -1,0 +1,140 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body with Red Overlay & Background */
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: 
+    linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)),
+    url('good%20smiling%20donor.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  padding: 40px;
+}
+
+/* Outer Container - Horizontal Card */
+.outercontainer {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 50px;
+  max-width: 1100px;
+  width: 95%;
+  box-shadow: 0 20px 40px rgba(255, 77, 77, 0.3);
+  animation: fadeIn 0.5s ease-in-out;
+  align-items: flex-start;
+}
+
+/* Left Heading */
+.header {
+  flex: 1;
+  font-size: 42px;
+  font-weight: 700;
+  color: #cc0000;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* Right Form Section */
+.formsection {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center inner content */
+  gap: 20px;
+}
+
+/* Input Group */
+.innercontainer {
+  width: 70%; /* Reduced from 100% to give space */
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.innercontainer label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.innercontainer input {
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fafafa;
+  transition: 0.3s;
+}
+
+.innercontainer input:focus {
+  border-color: #ff4d4d;
+  box-shadow: 0 0 10px rgba(255, 77, 77, 0.3);
+  background-color: #fff;
+  outline: none;
+}
+
+/* Submit Button */
+#submit {
+  width: 70%; /* Match input width */
+  padding: 14px;
+  background: linear-gradient(to right, #ff4d4d, #d60000);
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 77, 77, 0.4);
+}
+
+/* Footer */
+.footer {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: #555;
+}
+
+.footer a {
+  color: #cc0000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #a30000;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+

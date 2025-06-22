@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Find Donors</title>
+  <link rel="stylesheet" href="common.css" />
+  <link rel="stylesheet" href="finddonors.css" />
+</head>
+<script type="module" src="find_donors.js"></script>
+
+<body>
+
+  <!-- Background overlay -->
+  <div class="bg-image"></div>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <img src="Gemini_Generated_Image_45kg4l45kg4l45kg (1).png" alt="logo" />
+    </div>
+    <div class="navfeatures">
+      <button class="buttons" onclick="location.href='index.html'">Home</button>
+      <button class="buttons" onclick="location.href='how_it_works.html'">How It Works</button>
+      <button class="buttons" onclick="location.href='signin.html'">Register as a Future Donor</button>
+      <button class="buttons" onclick="location.href='request_blood.html'">Request Urgent Blood</button>
+      <button class="buttons" onclick="location.href='find_donors.html'">Find Donors</button>
+      <button class="buttons" onclick="location.href='donor_profile.html'">Donor Profiles</button>
+      <button class="buttons" onclick="location.href='about_us.html'">About Us</button>
+    </div>
+  </nav>
+
+  <!-- Heading -->
+  <h2>Find a Donor Near You</h2>
+
+  <!-- Search Form -->
+  <div class="search-box">
+    <form id="searchForm">
+      
+      <div class="form-group">
+        <label for="bloodGroup">Blood Group</label>
+        <select id="bloodGroup">
+          <option value="">Select</option>
+          <option>A+</option>
+          <option>A-</option>
+          <option>B+</option>
+          <option>B-</option>
+          <option>O+</option>
+          <option>O-</option>
+          <option>AB+</option>
+          <option>AB-</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="state">State</label>
+        <select id="state">
+          <option value="">Select State</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="district">District</label>
+        <select id="district">
+          <option value="">Select District</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="village">Village / Area</label>
+        <select id="village">
+          <option value="">Select Village</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="pincode">Pin Code</label>
+        <input type="text" id="pincode" placeholder="Auto-filled" readonly />
+      </div>
+
+      <button class="search-button" type="submit">Search</button>
+    </form>
+  </div>
+
+  <!-- Donor results will be displayed here -->
+  <div id="donorList"></div>
+
+  <!-- Footer -->
+  <footer>
+    <p>📞 Contact us:✉️ raktsetu.helpdesk@gmail.com</p>
+  </footer>
+
+</body>
+</html>

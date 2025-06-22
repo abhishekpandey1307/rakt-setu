@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Up to Donate</title>
+  <link rel="stylesheet" href="common.css" />
+  <link rel="stylesheet" href="signupdonor.css" />
+  <script type="module" src="signupdonor.js" defer></script>
+</head>
+<body>
+
+  <!-- Red overlay background -->
+  <div class="bg-image"></div>
+
+  <!-- Fixed Navbar -->
+  <nav>
+    <div class="logo">
+      <img src="Gemini_Generated_Image_45kg4l45kg4l45kg (1).png" alt="logo" />
+    </div>
+    <div class="navfeatures">
+      <button class="buttons" onclick="location.href='index.html'">Home</button>
+      <button class="buttons" onclick="location.href='how_it_works.html'">How It Works</button>
+      <button class="buttons" onclick="location.href='signin.html'">Register as a Future Donor</button>
+      <button class="buttons" onclick="location.href='request_blood.html'">Request Urgent Blood</button>
+      <button class="buttons" onclick="location.href='find_donors.html'">Find Donors</button>
+      <button class="buttons" onclick="location.href='donor_profile.html'">Donor Profiles</button>
+      <button class="buttons" onclick="location.href='about_us.html'">About Us</button>
+    </div>
+  </nav>
+
+  <!-- Heading -->
+  <h2 class="heading-card">🩸 Join Our Donor List – <br>So Patients Can Reach You in Blood Emergencies</h2>
+
+  <!-- Sign Up Form Section -->
+  <section>
+    <form>
+      <div class="block">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required />
+      </div>
+
+      <div class="block">
+        <label for="age">Age:</label>
+        <input type="number" id="age" required />
+      </div>
+
+      <div class="block">
+        <label for="contact">Contact Number:</label>
+        <input type="text" id="contact" required />
+      </div>
+
+      <div class="block">
+        <label for="bloodgroup">Blood Group:</label>
+        <select id="bloodgroup" required>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+        </select>
+      </div>
+
+      <div class="block">
+        <label for="availability">Availability:</label>
+        <select id="availability" required>
+          <option value="Available">Available</option>
+          <option value="Not Available">Not Available</option>
+        </select>
+      </div>
+
+      <!-- Dynamic Location Dropdowns -->
+      <div class="block">
+        <label for="state">State:</label>
+        <select id="state" required>
+          <option value="">Select State</option>
+        </select>
+      </div>
+
+      <div class="block">
+        <label for="district">District:</label>
+        <select id="district" required>
+          <option value="">Select District</option>
+        </select>
+      </div>
+
+      <div class="block">
+        <label for="village">Village/Post Office:</label>
+        <select id="village" required>
+          <option value="">Select Village</option>
+        </select>
+      </div>
+
+      <div class="block">
+        <label for="pincode">PIN Code:</label>
+        <input type="text" id="pincode" readonly required />
+      </div>
+
+      <!-- Optional Details -->
+      <div class="block">
+        <label for="landmark">Landmark:</label>
+        <input type="text" id="landmark" required />
+      </div>
+
+      <button class="buttons" type="submit">Submit</button>
+
+      <div class="footer-note">
+        Already Filled ? <a href="already_joined.html">Click Here </a>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>📞 Contact us:✉️ raktsetu.helpdesk@gmail.com</p>
+  </footer>
+
+</body>
+</html>
+

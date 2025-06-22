@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+<meta name="description" content="Rakt-Setu is your emergency support system to connect with available blood donors near you. Join and help save lives.">
+<title>Rakt-Setu | Connect with Blood Donors Near You in Emergencies</title>
+
+  <link rel="stylesheet" href="common.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<script type="module" src="LandingPage.js"></script>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">
+      <img src="Gemini_Generated_Image_45kg4l45kg4l45kg (1).png" alt="logo" />
+    </div>
+    <div class="navfeatures">
+      <button class="buttons" onclick="location.href='index.html'">Home</button>
+      <button class="buttons" onclick="location.href='how_it_works.html'">How It Works</button>
+      <button class="buttons" onclick="location.href='signin.html'">Register as a Future Donor</button>
+      <button class="buttons" onclick="location.href='request_blood.html'">Request Urgent Blood</button>
+      <button class="buttons" onclick="location.href='find_donors.html'">Find Donors</button>
+      <button class="buttons" onclick="location.href='donor_profile.html'">Donor Profiles</button>
+      <button class="buttons" onclick="location.href='about_us.html'">About Us</button>
+    </div>
+  </nav>
+
+  <!-- Background Image -->
+  <div class="bg-image"></div>
+
+  <!-- Centered Main Section -->
+  <div class="main-container">
+    <h1>Need Blood Urgently?</h1>
+    <h2>Find donors near you</h2>
+
+    <!-- Dropdowns -->
+    <select id="state" class="dropdown">
+      <option value="">Select State</option>
+    </select>
+
+    <select id="district" class="dropdown">
+      <option value="">Select District</option>
+    </select>
+
+    <select id="blood-group" class="dropdown">
+      <option value="">Select Blood Group</option>
+      <option value="A+">A+</option>
+      <option value="A-">A−</option>
+      <option value="B+">B+</option>
+      <option value="B-">B−</option>
+      <option value="O+">O+</option>
+      <option value="O-">O−</option>
+      <option value="AB+">AB+</option>
+      <option value="AB-">AB−</option>
+    </select>
+
+    <button class="search-btn">Search</button>
+
+    <!-- How it works -->
+  <section id="how-it-works">
+  <h3>⚙️ How It Works</h3>
+  <ul>
+    <li>📍 <strong>Find Donors:</strong> Select <em>Blood Group</em>, <em>State</em>, <em>District</em>, and <em>Village/Area</em> to find the closest donors.</li>
+    <li>📢 <strong>Request Urgent Blood:</strong> Alert nearby donors by posting a blood request.</li>
+    <li>📞 <strong>Donor Profiles:</strong> View and connect securely with registered donors.</li>
+    <li>🩸 <strong>Register as a Future Donor:</strong> Make yourself available to help during emergencies.</li>
+    <li>ℹ️ <strong>About Us:</strong> Learn more about our mission and team.</li>
+  </ul>
+</section>
+
+  </div>
+
+  <script type="module" src="landing-dropdown.js"></script>
+</body>
+</html>

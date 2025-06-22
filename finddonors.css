@@ -1,0 +1,194 @@
+/* Background image */
+.bg-image {
+  background-image: url('blood_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+/* Main heading */
+h2 {
+  text-align: center;
+  color: #d60000;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 30px auto;
+  max-width: 600px;
+  padding: 15px;
+  background-color: #fff0f0;
+  border-radius: 12px;
+  border: 1px solid #ffd6d6;
+  box-shadow: 0 6px 12px rgba(255, 77, 77, 0.2);
+}
+
+/* Search form box */
+.search-box {
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #ffe0e0;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(255, 77, 77, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+form select,
+form input {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fafafa;
+  transition: 0.3s ease;
+}
+
+form select:focus,
+form input:focus {
+  border-color: #ff4d4d;
+  background-color: #fff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 77, 77, 0.2);
+}
+
+form input[readonly] {
+  background-color: #f0f0f0;
+  color: #555;
+  cursor: not-allowed;
+}
+
+/* Search button */
+.search-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #ff3333;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #d60000;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 77, 77, 0.3);
+}
+
+/* Donor result placeholder */
+#donorList {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: #777;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Adjust body padding so content sits below navbar */
+body {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 100px;
+
+  background:
+    linear-gradient(rgba(255, 0, 0, 0.4), rgba(255, 0, 0, 0.4)),  /* Red overlay */
+    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),  /* Faint effect */
+    url('buildings-1869425_1280.jpg') no-repeat center center;
+
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: overlay, lighten;
+  color: #333;
+}
+
+
+.donor-card {
+  background-color: #fff;
+  border: 2px solid #ffd6d6;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(255, 77, 77, 0.1);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.pincode-match {
+  border-left: 8px solid #d60000;
+}
+
+.village-match {
+  border-left: 8px solid #ff4d4d;
+}
+
+.district-match {
+  border-left: 8px solid #ff9999;
+}
+
+.no-result-alert {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.95);
+  background-color: #fff0f0;
+  border: 1.5px solid #ffcccc;
+  color: #b00000;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(255, 0, 0, 0.12);
+  z-index: 9999;
+  text-align: center;
+  font-size: 16px;
+  max-width: 90%;
+  opacity: 0;
+  animation: fadeSlideDown 0.4s ease-out forwards;
+}
+
+@keyframes fadeSlideDown {
+  from {
+    transform: translateX(-50%) translateY(-20px) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) translateY(0) scale(1);
+    opacity: 1;
+  }
+}

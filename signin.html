@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="signin.css">
+        <link rel="stylesheet" href="common-2.css">
+        <script type="module" src="signup.js" defer></script>
+    </head>
+    <body>
+        
+
+        <div class="outercontainer">
+            <div>
+                 <!-- Header for the sign-up page -->
+                <div class="header">SIGN UP</div>
+                <div class="lower">Sign up to Continue</div>
+            </div>
+             <!-- Input fields for email and password -->
+            <div class="innercontainer">
+                <label for="email">Enter Email Adress:</label>
+                <input id="email" type="email" placeholder="Enter  you Email Address" required>
+            </div>
+           <div class="innercontainer">
+                <label for="password">Enter Password:</label>
+                <input id="password" type="password" placeholder="Use Strong Password" required>
+           </div>
+           <!-- Button to submit the sign-up form -->
+            <button id="submit" type="submit">
+                Create Account
+            </button>
+            <!-- Redirecting to login page for existing users -->
+            <div class="footer">
+                Already have an Account,  <a href="login.html">LOG IN</a>
+            </div>
+        </div>
+    </body>
+</html>

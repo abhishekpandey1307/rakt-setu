@@ -1,0 +1,119 @@
+/* Section Styling */
+section {
+  width: 95%;
+  max-width: 550px;
+  margin: 30px auto;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 16px;
+  padding: 30px 24px;
+  box-shadow: 0 10px 30px rgba(255, 77, 77, 0.2);
+  border: 1px solid rgba(255, 182, 182, 0.6);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Heading Styling */
+.heading-card {
+  text-align: center;
+  color: #d60000;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 30px auto 20px;
+  padding: 20px;
+  background-color: #fff0f0;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(255, 77, 77, 0.2);
+  border: 1px solid #ffd6d6;
+  max-width: 900px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Block Styling */
+.block {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label Styling */
+label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+/* Input & Select Styling */
+input[type="text"],
+input[type="number"],
+select {
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fafafa;
+  transition: 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #ff4d4d;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(255, 77, 77, 0.2);
+  outline: none;
+}
+
+/* Button Styling */
+form .buttons,
+.submit-btn {
+  background-color: #ff4d4d;
+  color: #fff;
+  padding: 12px 16px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form .buttons:hover,
+.submit-btn:hover {
+  background-color: #cc0000;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Active Nav Button */
+.navfeatures .buttons.active {
+  background-color: #cc0000;
+  color: white;
+  border: 1px solid #b30000;
+}
+
+
+
+
