@@ -1,72 +1,91 @@
-🇮🇳 Rakt-Setu 🔗 | Connecting Lives Through Blood
-Rakt-Setu is a life-saving platform that instantly connects patients in urgent need of blood with matching donors nearby — especially when blood banks fall short.
+# 🇮🇳 Rakt-Setu 🔗 | Connecting Lives Through Blood
 
-🌐 Live Website: https://rakt-setu.netlify.app
+**Rakt-Setu** is a life-saving platform that instantly connects patients in urgent need of blood with matching donors nearby — especially when blood banks fall short.
 
-🚨 Problem We Solve
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e4c84d68-1dc2-4ef2-8c2e-171e9427b1a9/deploy-status)](https://rakt-setu.netlify.app)
+![Firebase](https://img.shields.io/badge/Backend-Firebase-orange?logo=firebase)
+![Status](https://img.shields.io/badge/Live-Yes-brightgreen)
+
+---
+
+🌐 **Live Website**: [https://rakt-setu.netlify.app](https://rakt-setu.netlify.app)
+
+---
+
+## 🚨 Problem We Solve
+
 Every year, thousands of lives are lost in India due to the unavailability of blood at the right moment. Reasons include:
 
-Rare blood groups
+- Rare blood groups  
+- Lack of blood banks in rural/village areas  
+- Emergencies where hospitals or banks can't help fast enough  
 
-Lack of blood banks in rural/village areas
+**Rakt-Setu** acts as a digital bridge between patients and donors, ensuring real-time access to critical help.
 
-Emergencies where hospitals or banks can't help fast enough
+---
 
-Rakt-Setu acts as a digital bridge between patients and donors, ensuring real-time access to critical help.
+## 🧩 Features
 
-🧩 Features
-👨‍⚕️ For Patients & Hospitals
-Request Urgent Blood: Auto-notifies matching donors instantly via email.
+### 👨‍⚕️ For Patients & Hospitals
 
-Find Donors: Browse registered donors using filters like blood group, state, and district.
+- **Request Urgent Blood:** Auto-notifies matching donors instantly via email.  
+- **Find Donors:** Browse registered donors using filters like blood group, state, and district.  
+- **Direct Contact:** View verified donor contact and address for urgent communication.  
 
-Direct Contact: View verified donor contact and address for urgent communication.
+### 🩸 For Donors
 
-🩸 For Donors
-Register as a Future Donor: Become a lifesaver for someone in your region.
+- **Register as a Future Donor:** Become a lifesaver for someone in your region.  
+- **Get Alerted Automatically:** Receive instant notifications when someone nearby needs blood.  
+- **Be Recognized:** Featured under “Donor Profiles” — celebrating everyday heroes.  
 
-Get Alerted Automatically: Receive instant notifications when someone nearby needs blood.
+---
 
-Be Recognized: Featured under “Donor Profiles” — celebrating everyday heroes.
+## ⚙️ How It Works
 
-⚙️ How It Works
-Patients click on “Request Urgent Blood”, fill out basic details.
+1. Patients click on **“Request Urgent Blood”**, and fill out basic details.  
+2. The system finds nearby registered donors with the matching blood group.  
+3. All matches get **instant automated emails** with patient contact/location.  
+4. Users can also manually **“Find Donors”** to view and contact them directly.  
 
-The system finds nearby registered donors with the matching blood group.
+---
 
-All matches get instant automated emails with patient contact/location.
+## 🛠️ Tech Stack
 
-Users can also manually “Find Donors” to view and contact them directly.
+| Layer        | Technology              |
+|--------------|--------------------------|
+| Frontend     | HTML, CSS, JavaScript    |
+| Backend      | Firebase (Firestore, Auth) |
+| Email Alerts | EmailJS                  |
+| Hosting      | Netlify                  |
 
-🛠️ Tech Stack
-Frontend: HTML, CSS, JavaScript
+---
 
-Backend: Firebase (Firestore, Auth)
+## 🚀 Future Enhancements
 
-Email Alerts: EmailJS
+- 📲 SMS notifications for low-internet areas  
+- 🌐 Multilingual support (regional languages)  
+- 🏥 Hospital-admin panel to verify patients/donors  
+- 🟢 Real-time availability badges (e.g. "Available Now")  
 
-Hosting: Netlify
+---
 
-🚀 Future Enhancements
-SMS notifications for low-internet areas
+## 📌 Quick Links
 
-Multilingual support (regional languages)
+- 🔴 [Request Urgent Blood](https://rakt-setu.netlify.app/request_blood.html)  
+- 🩸 [Register as Donor](https://rakt-setu.netlify.app/signin.html)  
+- 🔍 [Find Donors](https://rakt-setu.netlify.app/find_donors.html)  
+- 🙌 [Donor Profiles](https://rakt-setu.netlify.app/donor_profile.html)  
 
-Hospital-admin panel to verify patients/donors
+---
 
-Real-time availability badges (e.g. "Available Now")
+## 💬 Contact
 
-📌 Quick Links
-🔴 Request Urgent Blood
+📧 **raktsetu.helpdesk@gmail.com**
 
-🩸 Register as Donor
+---
 
-🔍 Find Donors
+## 🙏 Acknowledgment
 
-🙌 Donor Profiles
+This project is dedicated to every life that could be saved, and to the heroes who donate selflessly.  
+With **Rakt-Setu**, we aim to ensure that **no one dies waiting for blood**.
 
-💬 Contact
-📧 raktsetu.helpdesk@gmail.com
-
-🙏 Acknowledgment
-This project is dedicated to every life that could be saved, and to the heroes who donate selflessly. With Rakt-Setu, we aim to ensure that no one dies waiting for blood.
