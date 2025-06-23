@@ -1,18 +1,26 @@
-// config.js
+// config-example.js
 
-// Firebase Configuration
-export const FIREBASE_CONFIG = {
+//  Replace these placeholder values with your actual credentials in a local config.js file
+//  Never commit the real config.js file to source control
+
+// EmailJS Config (placeholder values)
+const EMAILJS_PUBLIC_KEY = "YOUR_EMAILJS_PUBLIC_KEY";
+const EMAILJS_TEMPLATE_ID = "YOUR_EMAILJS_TEMPLATE_ID";
+const EMAILJS_SERVICE_ID = "YOUR_EMAILJS_SERVICE_ID";
+
+// Firebase Config (placeholder values)
+const FIREBASE_CONFIG = {
   apiKey: "YOUR_FIREBASE_API_KEY",
-  authDomain: "your-app.firebaseapp.com",
-  projectId: "your-app-id",
-  storageBucket: "your-app.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  authDomain: "YOUR_FIREBASE_PROJECT.firebaseapp.com",
+  projectId: "YOUR_FIREBASE_PROJECT_ID",
+  storageBucket: "YOUR_FIREBASE_STORAGE_BUCKET",
+  messagingSenderId: "YOUR_FIREBASE_MESSAGING_SENDER_ID",
+  appId: "YOUR_FIREBASE_APP_ID"
 };
 
-// EmailJS Configuration
-export const EMAILJS_CONFIG = {
-  userID: "YOUR_EMAILJS_USER_ID",        // emailjs.init("userID")
-  serviceID: "YOUR_EMAILJS_SERVICE_ID",  // emailjs.send(serviceID, ...)
-  templateID: "YOUR_EMAILJS_TEMPLATE_ID" // emailjs.send(..., templateID, ...)
+export {
+  FIREBASE_CONFIG,
+  EMAILJS_PUBLIC_KEY,
+  EMAILJS_TEMPLATE_ID,
+  EMAILJS_SERVICE_ID
 };
